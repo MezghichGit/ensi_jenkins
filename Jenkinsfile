@@ -7,7 +7,7 @@ pipeline {
 
     steps {
                 script {
-                    echo "====++++ Pull code en cours ++++===="
+                    echo "====++++ Pull code en cours depuis github ++++===="
 
                    
                 }
