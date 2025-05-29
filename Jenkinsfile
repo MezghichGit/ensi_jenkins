@@ -50,6 +50,8 @@ pipeline {
                     // sh "docker rm -f temp-cv-container || true"
 
                     // ▶️ Lancer un conteneur à partir de l’image créée
+                    sh "docker stop mezghichcont"
+                    sh "docker rm mezghichcont"
                     sh "docker run -d --name mezghichcont -p 8600:80 mezghich2025"
                 }
             }
